@@ -1,6 +1,10 @@
+/* General Styles */
 main {
   margin-top: 60px;
 }
+/* body {
+  margin: 50px;
+} */
 
 main h1 {
   margin: 0 10px;
@@ -26,4 +30,33 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+/* Groups and items flex box and all (mobile first*/
+.group {
+  display: flex;
+  flex-direction: column; /*mobile first*/
+  margin-bottom: 100px;
+}
+.item {
+  margin: 10px;
+  flex: 1;
+}
+.item-double{
+  flex: 2;
+  margin: 10px
+}
+.group img {
+  width: 100%;
+}
+.bg-color {
+  background-color:#db780f
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%
+  }
+  .group {
+    flex-direction: row;
+  }
 }
